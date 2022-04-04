@@ -15,6 +15,12 @@ Feature: Cheapoair Flight search functionality
     When user search for the available flights for the futures dates
     Then verify user should see the available flights
 
+    #Ymal style
+  Scenario: 2verify user is able to search for the available flights for a future dates using in Ymal file
+    Given user is on the Cheapoair homepage
+    When user search for the available flights for the futures dates with yml file
+    Then verify user should see the available flights
+
     #nagative cases
   Scenario: verify user is able to validate the mandartory search fields for All the flield for Flights search
     Given user is on the Cheapoair homepage

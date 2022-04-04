@@ -60,3 +60,7 @@ And(/^flight search results are displayed with sort order of price$/) do
   fail "Prices - #{all_prices} are not in Ascending Order - #{all_prices.sort}" unless all_prices == all_prices.sort
   #expect(all_prices).should be eq all_prices.sort
 end
+
+When(/^user search for the available flights for the futures dates with yml file$/) do
+  pending
+end

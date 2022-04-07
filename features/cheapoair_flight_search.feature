@@ -1,5 +1,7 @@
+@flight_search
 Feature: Cheapoair Flight search functionality
 
+  @smoke
   Scenario: 1verify user is able to search for the available flights for a future dates
     Given user is on the Cheapoair homepage
     When user search for Columbus city and select CMH - Columbus, Ohio, United States airport for departure
@@ -10,17 +12,20 @@ Feature: Cheapoair Flight search functionality
     Then verify user should see the available flights
 
     #Declarative style
+  @sanity
   Scenario: 2verify user is able to search for the available flights for a future dates in Declarative style
     Given user is on the Cheapoair homepage
     When user search for the available flights for the futures dates
     Then verify user should see the available flights
 
     #Ymal style
+  @jira_345_yml
   Scenario: 2verify user is able to search for the available flights for a future dates using in Ymal file
     Given user is on the Cheapoair homepage
     When user search for the available flights for the futures dates with yml file
     Then verify user should see the available flights
 
+  @wip @manual
     #nagative cases
   Scenario: verify user is able to validate the mandartory search fields for All the flield for Flights search
     Given user is on the Cheapoair homepage

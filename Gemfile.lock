@@ -104,6 +104,7 @@ DEPENDENCIES
   page-object (~> 2.0)
   rake
   rspec
+  yml_reader
 
 BUNDLED WITH
    2.3.8

@@ -1,1 +1,4 @@
-default: --no-source --color --format pretty
+#default: --no-source --color --format pretty
+default: --no-source --color --format pretty --format html --out results.html
+smoke: --no-source --color --format pretty --tags @smoke
+Flight_tests: --no-source --color --format pretty --tags @flight_search

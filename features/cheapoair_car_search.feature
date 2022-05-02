@@ -5,4 +5,3 @@ Feature: Car search functionality
   Scenario: verify the user is able to search for the cars availablity
     Given user is on the Cheapoair homepage
     When user search for cars availability for future dates
-    And user should see the list of cars option
